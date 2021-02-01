@@ -1,0 +1,107 @@
+<!DOCTYPE html><!--versao 5 de html-->
+<html>
+    <head><!--comandos/instrucoes-->
+        <meta charset="UTF-8"><!--permitir acentos e cedilhas-->
+        <title>Produtos - Barbearia Alura</title><!--titulo da pagina-->
+        <link rel="stylesheet" href="reset.css"><!--resetar as configuraceos de pagina do navegador-->
+        <link rel="stylesheet" href="style.css"><!--sincronizar outra pagina-->
+    </head>
+    <body>
+        <header><!--cabecalho-->
+
+            <div class="caixa"><!--divisao de area-->
+                <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1><!--titulo-->
+
+                <nav><!--navegacao da pagina-->
+                <ul><!--lista nao ordenada-->
+                    <li><a href="index.html">Home</a><!--link de referencia--></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+                </nav>
+            </div>
+            
+        </header>
+
+        <main  class="contato-html">
+            <form><!--formulario de contato-->
+                <label for="nomesobrenome">Nome e sobrenome</label><!--Etiqueda para o input com o id nomesobrenome-->
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Joao Pedro"><!--input = entrada de dados tipo texto com entrada obrigadoria(required), e um exemplo de entrada(placeholder)-->
+
+                <label for="email">Email</label><!--Etiqueda para o input com o id email-->
+                <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com"><!--input = entrada de dados tipo email com entrada obrigadoria(required), e um exemplo de entrada(placeholder)-->
+
+                <label for="telefone">Telefone</label><!--Etiqueda para o input com o id telefone-->
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"><!--input = entrada de dados tipo telefone com o id telefone com entrada obrigadoria(required), e um exemplo de entrada(placeholder)-->
+
+                <label for="mensagem">Mensagem</label><!--etiqueta para textearea mensagem-->
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea><!--textearia definindo seu tamanho e com o id mensagem, com entrada obrigadoria(required)-->
+
+                <fieldset><!--contato com tag fieldset que e referente a um ou mais campos com o mesmo assunto em especifico-->
+
+                    <legend>Como prefere nosso contato?</legend><!--Legenda do fieldset (como se fosse um titulo)-->
+
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"><!--input com name contato(mesmo grupo do contato)-->
+                    Email</label><!--etiqueta do email no grupo de contato-->
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"><!--input com name contato(mesmo grupo do contato)-->
+                    Telefone</label><!--etiqueta do telefone no grupo de contato-->
+                    
+
+                    <label for="radio-whatsapp">  <input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp" checked><!--input com name contato(mesmo grupo do contato), e opcao pre marcada(checked)-->
+                    Whatsapp</label><!--etiqueta do whatsapp no grupo de contato-->
+                   
+                </fieldset><!--fim da divisao de grupo-->
+
+                <fieldset>
+                    <legend>Qual horario prefere ser atendido?</legend><!--Legenda do fieldset (como se fosse um titulo)-->
+                    <select><!--dropdown para selecionar um item na caixa-->
+                        <option>Manha</option><!--opcao dentro o dropdown-->
+                        <option>Tarde</option><!--opcao dentro o dropdown-->
+                        <option>Noite</option><!--opcao dentro o dropdown-->
+                    </select>
+                </fieldset>
+
+                 <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas informacoes por email?</label><!--checkbox com uma etiqueta, ja pre marcada (checked)-->
+                 <input type="submit" value="Enviar Formulario" class="enviar"><!--input para envio do formulario (botao) com o nome Enviar formulario-->
+         
+            </form><!--fim do formulario de contato-->
+
+            <table><!--tag para iniciar uma tabela-->
+
+                <thead><!--cabecalho da tabela-->
+                    <th colspan="2">Funcionamento</th><!--celula ocupando 2 espacos-->
+                        <tr><!--table roll/linha na tabela-->
+                            <th>Dia</th><!--Celula do cabecalho-->
+                            <th>Horario</th><!--Celula do cabecalho-->
+                        </tr>
+                </thead>
+
+                <tbody><!--corpo da tabela-->
+                        <tr><!--table roll/linha na tabela-->
+                            <td>Segunda</td><!--Celula na tabela-->
+                            <td>8h - 20h</td><!--Celula na tabela-->
+                        </tr>
+
+                        <tr><!--table roll/linha na tabela-->
+                            <td>Quarta</td><!--Celula na tabela-->
+                            <td>8h - 20h</td><!--Celula na tabela-->
+                        </tr>
+
+                        <tr><!--table roll/linha na tabela-->
+                            <td>Sexta</td><!--Celula na tabela-->
+                            <td>8h - 20h</td><!--Celula na tabela-->
+                        </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+
+        <footer> <!--rodape-->
+            <img src="logo-branco.png">
+            <p class="copyright">&copy;Coryright Barbearia</p>
+        </footer>
+    </body>
+
+    </header>

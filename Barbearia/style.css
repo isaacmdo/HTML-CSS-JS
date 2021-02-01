@@ -1,0 +1,267 @@
+body {
+    font-family: 'Montserrat', sans-serif; /*fonte importada do google fonts no head do index que vai ser aplicado para todos os textos do site*/
+}
+
+header {
+    background: linear-gradient(#888888, #fefefe); /* fundo */
+}
+
+.caixa {
+    position: relative; /* utiliza seu próprio canto para referenciar sua posição */
+    width: 940px; /* largura */
+    margin: 0 auto; /* centralizar um conteudo */
+}
+
+nav {
+    position: absolute; /* podemos modificar a posicao sem um elemento inicial */
+    top: 110px; /* posicao em cima */
+    right: 0; /* posicao a direita */
+}
+
+nav li {
+    display: inline; /* caixa alinhada */
+    margin: 0 0 0 15px; /* margem */
+}
+
+nav a {
+    text-transform: uppercase; /* texto em maiusculo */
+    color: #000000; /* cor */
+    font-weight: bold; /* negrito */
+    font-size: 22px; /* tamanho da fonte */
+    text-decoration: none; /* sem hiperlink selecionado */
+}
+
+nav a:hover /* quando o usuairo passar com o mouse em cima do elemento */ {
+    color: #c78c19; /* cor dos elementos */
+    text-decoration: underline; /* sublianhar quando passar o mouse em cima */
+}
+
+.produtos {
+    width: 940px; /* largura do itens */
+    margin: 0 auto; /* margem automatica */
+    padding: 50px 0; /* largura da borda do elemento */
+}
+
+.produtos li {
+    display: inline-block; /* deixar os itens na mesma linha e poder definir uma altura e largura(bloco) */
+    text-align: center; /* alinhamento do texto */
+    width: 30%; /* largura do elemento */
+    vertical-align: top; /* alinhamento vertial em cima */
+    margin: 0 1.5%;  /* definicao da margem */
+    padding: 30px 20px; /* largura da borda interna do elemento/aumenta o tamanho do elemento */
+    box-sizing: border-box; /* espacamento interno */
+    border: 3px solid #000000; /* borda de 2px, tipo solid, e cor preta */
+    border-radius: 10px; /* cantos da bordas arredondados */
+}
+
+.produtos li:hover /* mouse por cima */ {
+    border-color: #c78c19; /* cor da borda */
+}
+
+.produtos li:active /* no clique do mouse */ {
+    border-color: #088c19; /* cor da borda */
+}
+
+.produtos li:hover h2 /* quando passar o mouse em cima modificamos os elementos do h2 */ {
+    font-size: 34px; /* tamanho da fonte */
+}
+
+.produtos h2 {
+    font-size: 30px; /* tamando da fonte */
+    font-weight: bold; /* negrito */
+}
+
+.produtos-preco {
+    font-size: 22px; /* tamando da fonte */
+    font-weight: bold; /* negrito*/
+    margin: 10px 0 0; /* margem */
+}
+
+.produto-descricao {
+    font-size: 18px; /* tamando da fonte*/
+}
+
+footer {
+    text-align: center; /* linhas o texto no centro */
+    background: url("bg.jpg"); /* definicao do background por uma url de imagem de fundo*/
+    padding: 40px 0; /* definicao do espacamento interno */
+}
+
+.copyright {
+    font-size: 13px; /* tamanho da fonte */
+    color: #ffffff /* cor ad fonte */
+}
+
+.contato-html {
+    width: 940px; /* largura */
+    margin: 0 auto; /* margem */
+}
+
+form {
+    margin: 40px 0; /* margem topo e lados */
+}
+
+form label, form legend { /* mesmas configuracoes para a etiqueta e a legenda do fieldset*/
+    display: block; /* estrutura de bloco */
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block; /* estrutura de bloco */
+    margin: 0 0 20px; /* margem */
+    padding: 10px 25px; /* tamanho da caixa do topo de dos lados */
+    width: 50%; /* largura do input (50% dos 940px) */
+}
+
+.checkbox {
+    margin: 20px 0; /* margin do checkbox */
+}
+
+.enviar {
+    width: 40%; /* tamanho da largura da caixa em relacao ao site (que e de 940px) */
+    padding: 15px 0; /* espacamento interno pra cima e pra baixo */
+    background: orange; /* fundo da caixa */
+    color: white; /* cor do texto */
+    font-weight: bold; /* texto em negrito */
+    font-size: 18px; /* tamanho da fonte */
+    border: none; /* sem borda padrao */
+    border-radius: 5px; /* canto da borda arredondado */
+    transition: 1s all; /*transicao para mudanca de cor do background, e todos os itens de 1 segundo */
+    cursor: pointer; /* quando o mouse estiver por cima mostra que o item e clicavel */
+}
+
+.enviar:hover /*quando o mouse estiver em cima da classe enviar */ {
+    background: darkorange; /* muda a cor do funco */
+    transform: scale(1.2); /* aumenta seu tamanho/escala em 1.2 quando o mouse estiver em cima proporcionalmente*/
+}
+
+table /* estrutura da tabela */{
+    margin: 20px 0 40px; /* espacamento externo (margem) 20px pra cima e pra baixo 0px laterais*/
+}
+
+thead /* cabecalho da tabela */{
+    background: #555555; /* funda do cabecalho */
+    color: white; /* cor da fonte */
+    font-weight: bold; /* fonte me negrito */
+}
+
+td, th /* celulas e linhas da tabela/conteudo */{
+    border: 1px solid #000000; /* borda do conteudo td th */
+    padding: 8px 15px; /*espacamento lateral de 15px e 8px no pra cima e pra baixo*/
+}
+
+.banner {
+    width: 100%; /* largura com 100% da pagina */
+}
+
+.titulo-principal {
+    text-align: center; /* texto alinhado no centro */
+    font-size: 2em; /* tamando do dobro do tamanho base da fonte de que de 16px */
+    margin: 0 0 1em;
+    clear: left; /* para limpar o float da imagem de utensilios */
+}
+
+.principal {
+    padding: 3em 0; /* espacamento interno */
+    background:#fefefe; /* cor de fundo */
+    width: 940px; /* largura */
+    margin: 0 auto; /* margem */
+}
+
+.principal p {
+    margin: 0 0 1em; /* margem para baixo proporcional ao tamanho da fonte */
+}
+
+.principal strong {
+    font-weight: bold; /*texto em negrito */
+}
+
+.principal em {
+    font-style: italic; /* estilo italico da fonte */
+}
+
+.utensilios {
+    width: 150px;
+    float: left; /* para contornar o texto em volta da imagem, porem afeta a pagina toda e so pode ser resolvido com o clear na sessao do tiulo principal 
+    Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele */
+    margin: 0 20px 20px 0px; /* margem de 0 para cima, 20px pra direita, 20px para baixo, e 0 para esquerda */
+}
+
+.mapa {
+    padding: 3em 0; /* espacamento interno da classe mapa de 3em pracima e pra baixa e 0 nas laterais */
+    background: linear-gradient(#fefefe, #888888); /* efeito degrade de cor de fundo */
+}
+
+.mapa-conteudo {
+    width: 940px; /* largura */
+    margin: 0 auto; /* margem */
+}
+
+.mapa p {
+    margin: 0 0 2em; /* espacamento externo para baixa de 2em */
+    text-align: center; /* centralizar o texto do paragrafo */
+}
+
+
+.conteudo-beneficios {
+    width: 640px; /*largura*/
+    margin: 0 auto; /* margem exteerna automatica para os lados */
+}
+
+.beneficios {
+    padding: 3em 0; /*espacamento interno do conteudo */
+    background: #888888; /*cor de fundo*/
+}
+
+.lista-beneficios {
+    width: 40%; /* largura */
+    display: inline-block; /* transforma a lista em bloco e os espacamentos ocupam apenas seu conteudo(obs.: espacos e pulas de linhas no html tambem contam como inline) */
+    vertical-align: top; /* alinhar a lista comecando do topo do bloco */
+}
+
+.itens {
+    line-height: 1.5; /* espacamento entre as linhas */
+}
+
+.itens:before /*pseudo-elemento para adicionar alguma coisa antes(before) de alguma acao, existem o pseudo elemento para depois tambem com o after(depois), para a primeira linha com (first-letter) */ {
+    content: "★ "; /* content(conteudo) que o css vai adicionar antes de elemento */
+}
+
+.itens:first-child /* pseudo elemento para o primeiro item da lista (poderia colocar o ultimo com last-child ou qualquer um com :nth-child(posiicao do elemento) */ {
+    font-weight: bold; /* texto em negrito */
+}
+
+.imagem-beneficios {
+    width: 60%; /* largura da imagem */
+    opacity: 1; /* opacidade do elemento de 0 a 1 (no caso nao tem opacidade e da pra tirar isso */
+    transition: 400ms; /*transsisao para aplicar os efeitos css */
+    box-shadow: 10px 10px 10px #000000; /* sombra no elemento externa, para interna usamos inset */
+}
+
+.imagem-beneficios:hover /*quando o mouse estiver em cima do elemento */ {
+    opacity: 0.3; /* opacidade em 30%*/
+}
+
+.video {
+    width: 560px; /*largura do video */
+    margin: 2em auto; /*espacamento externo de 1em pra cima e pra baixo e automatico nas laterias(que vai centralizar)*/
+}
+
+@media screen and (max-width: 480px) /* para um design responsivo mobile */ { 
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto; /* largura automatica */
+    }
+
+    h1 {
+        text-align: center; /* alinhar o texto no centro */
+    }
+
+    nav {
+        position: static; /* posicao */
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%; /* largura */
+    }
+}

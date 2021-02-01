@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Boletim de notas</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		<main>
+			<section class="container">
+				<h2>Notas</h2>
+					<table>
+						<tr>
+							<td>
+							<label for="idDisciplina">Selecionar a disciplina</label>
+							<select name="disciplina" id="id-Disciplina">
+							<option value="I">Introdução à informática</option>
+							<option value="P">Linguagens de Programação</option>
+							<option value="C">Programação de Computadores</option>
+							</select>
+							</td>
+						</tr>
+					</table>
+				<table>
+					<thead>
+						<tr>
+							<th>Disciplina</th>
+							<th>Nome</th>
+							<th>Prova 1</th>
+							<th>Prova 2</th>
+							<th>Exame</th>
+							<th>Media</th>
+							<th>Faltas</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-alunos">
+						<tr class="alunos">
+							<td class="info-disciplina"></td>
+							<td class="info-nome"></td>
+							<td class="info-prova1"></td>
+							<td class="info-prova2"></td>
+							<td class="info-exame"></td>
+							<td class="info-media"></td>
+							<td class="info-faltas"></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo aluno</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="grupo-nome">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome do aluno" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="prova1">Prova 1:</label>
+		            <input id="prova1" name="prova1" type="text" placeholder="digite a nota da prova 1" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="prova2">Prova 2:</label>
+		            <input id="prova2" name="prova2" type="text" placeholder="digite a nota da prova 2" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="exame">Exame:</label>
+		            <input id="exame" type="text" placeholder="digite a nota do exame" class="campo campo-medio">
+				</div>
+				
+				<div class="grupo">
+		            <label for="faltas">Faltas:</label>
+		            <input id="faltas" type="text" placeholder="digite as faltas do aluno" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-aluno" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+		<script src="js/calcula-media.js" ></script>
+		<script src="js/form.js" ></script>
+		<script src="js/remover-aluno.js" ></script>
+
+	</body>
+</html>
